@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito Mi Tienda</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="encabezado">
+    <a class="logo" href="index.html">Mi Tienda</a>
+    <a href="carrito.html">Carrito (<span id="contador-carrito">0</span>)</a>
+  </header>
+
+  <main class="contenido">
+    <h1>Tu carrito</h1>
+
+    <div id="lista-carrito"></div>
+    <p id="precio-total" class="precio-total"></p>
+
+    <form id="formulario-pedido" class="formulario">
+      <h2>Datos para el pedido</h2>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <button type="submit" class="boton">Hacer pedido</button>
+    </form>
+
+    <p id="mensaje-pedido" class="mensaje"></p>
+  </main>
+
+  <script src="js/carritoStorage.js"></script>
+  <script src="js/carrito.js"></script>
+</body>
+</html>

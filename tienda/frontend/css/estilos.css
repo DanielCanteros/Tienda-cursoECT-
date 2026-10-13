@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+a {
+  color: #1a5fb4;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #222;
+}
+
+.encabezado a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.contenido {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.tarjeta {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.precio {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2a7a2a;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #1a5fb4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #144a8c;
+}
+
+.boton-peligro {
+  background-color: #c01c28;
+}
+
+.boton-peligro:hover {
+  background-color: #9a1620;
+}
+
+.detalle {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 20px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.fila-carrito {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+  padding: 12px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.fila-nombre {
+  flex: 1;
+  font-weight: bold;
+}
+
+.fila-subtotal {
+  width: 70px;
+  text-align: right;
+}
+
+.precio-total {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.formulario {
+  display: none;
+  max-width: 400px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 10px;
+}
+
+.formulario input {
+  width: 100%;
+  margin: 5px 0 15px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.mensaje {
+  font-weight: bold;
+  color: #2a7a2a;
+}
